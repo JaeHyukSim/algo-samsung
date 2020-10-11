@@ -77,7 +77,8 @@ public class SWExpert_1949_등산로조성 {
 				if (map[ny][nx] < map[startY][startX]) {
 					make(ny, nx, dig, length + 1);
 				} else if (map[ny][nx] - K < map[startY][startX] && !dig) {
-					for (int k = 1; k <= K; k++) {
+					for (int k
+							= 1; k <= K; k++) {
 						map[ny][nx] -= k;
 						if (map[ny][nx] < map[startY][startX])
 							make(ny, nx, true, length + 1);
